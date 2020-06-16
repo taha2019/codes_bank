@@ -43,13 +43,12 @@ const server = http. createServer((req, res)=>{
             res.end('file have ereror')
         }else{
             res.end(data)
-			}
+		}
     });
 	fs.writeFile('data.json', 'hello world', function(err){
 	if (err) return console.error(err)
 	});
 });
-
 server.listen(3000, "127.0.0.1", ()=>{
     console.log('server runing')
 })
@@ -77,15 +76,15 @@ function routing (req, res){
     const path = url.parse(req.url).pathname;
         switch (path){
             case '/':
-				handelrequest('index.html', res);
+		handelrequest('index.html', res);
                 break;
-			case '/any':
-				handelrequest('any.html', res);
-				break;
-			case '/user':
-				handelrequest('user.html', res);
-				break;
-				default:
+	case '/any':
+		handelrequest('any.html', res);
+		break;
+	case '/user':
+		handelrequest('user.html', res);
+		break;
+		default:
                 res.end('this page not found');
                 break;
         }
