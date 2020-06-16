@@ -295,3 +295,12 @@ var sometext = "hello world"
 window.addEventListener("resize", function(){
   document.getElementById("demo").innerHTML = sometext;
 });  
+
+
+//كود رقم 15
+/*
+
+
+
+
+
