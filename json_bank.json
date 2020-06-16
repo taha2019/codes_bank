@@ -1,3 +1,12 @@
+//بنك أكواد جيسون
+
+
+/*كود رقم 1*/
+/*
+يتم كتابة هذا الكود فى ملف باسم data1.json
+انظر كود رقم 8 ببنك جافا اسكريت 
+وكود رقم 4 ببنك اتش تى ام ال
+*/
 [
 {
 "Username": "taha0",
@@ -8,12 +17,10 @@
 "Username": "taha1",
 "model": "mercedes",
 "password": "1"
-
 },
 {
 "Username": "taha2",
 "model": "mercedes2",
 "password": "2"
-
 }
 ]
