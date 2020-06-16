@@ -197,4 +197,40 @@ xReq.send();
 
 
 //كود رقم 10
-/
+/*
+تشغيل وإيقاف تيمر وتكرار التيمر
+تمت تجربة هذا الكود بنجاح
+*/
+//يتم إدراج النص فى الصفحة مرة واحدة بعد5 ثوانى
+function repeatingFunc( ) {
+ document.write( "It's been 5 seconds. Execute the function again." ) ;
+ }
+setTimeout( repeatingFunc, 5000) ;
+//يتم إدراج النص أكثر من مرة كل 5 ثوانى 
+function waitFunc( ) {
+ document.write( "This will be logged every 5 seconds" ) ;
+}
+setInterval( waitFunc, 5000) ;
+//النص لا يظهر مطلقا
+function waitFunc( ) {
+ document.write( "This will not be logged after 5 seconds" ) ;
+}
+function stopFunc( ) {
+ clearTimeout(timeout) ;
+}
+var timeout = window.setTimeout( waitFunc, 5000) ;
+window.setTimeout( stopFunc, 3000)
+//يتم إدراج النص 6 مرات مرة كل 5 ثوانى 
+function waitFunc( ) {
+ document.write( "This will be logged every 5 seconds" ) ;
+}
+var interval = window.setInterval( waitFunc, 5000) ;
+window.setTimeout( function( ) {
+ clearInterval( interval) ;
+}, 32000) ;
+
+
+
+//كود رقم11
+/*
+*/
