@@ -274,3 +274,24 @@ function loadDoc() {
 
 //كود رقم 14
 /*
+كود الاستماع إلى حدث على كائن
+انظر الكود رقم 6 ببنك اتش تى ام ال
+*/
+var text = document.getElementById('taha');
+//
+text.addEventListener("click", function(){ alert("Hello World!"); });
+//
+text.addEventListener("mouseover", myFunction);
+//
+text.addEventListener("click", myFunction);
+//
+text.addEventListener("mouseout", myFunction);
+// 
+function myFunction() {
+  alert ("Hello World!");
+}
+//
+var sometext = "hello world"
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = sometext;
+});  
