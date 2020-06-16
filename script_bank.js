@@ -132,6 +132,27 @@ app.listen(port, function(){
 
 
 //كود رقم 7
+/*
+كود التحكم فى تسجيل الدخول
+انظر كود رقم 2 ببنك اتش تى ام ال
+*/
+//تسجيل دخول المستخدمين
+function check(){
+var Username= document.getElementById("field").value;
+var password= document.getElementById("password").value;
+if (Username=="taha1" && password==1 
+//المستخدم الثانى
+|| Username=="taha2" && password==2
+//يجب وضع المستخد الثالث هنا بنفس نظام المستخد الثانى
+){
+return true;
+}
+else {
+	alert("اسم المستخدم أو كلمة المرور خطأ");
+	return false;
+}
+}
 
 
-
+//كود رقم 8
+/*
