@@ -230,7 +230,48 @@ window.setTimeout( function( ) {
 }, 32000) ;
 
 
-
 //كود رقم11
 /*
+قراءة الخصائص من object
+تمت تجربة هذا الكود بنجاح
 */
+var john = {firstname: "John" ,  lastname: "Doe" ,  fullname: "John Doe" };
+var billy = {
+ firstname: "Billy" ,
+ lastname: undefined,
+ fullname: "Billy"
+};
+window.alert(john.fullname) ; // John Doe
+window.alert(billy.firstname) ; // Billy
+
+
+//الكود رقم 12
+/*
+قراءة العناصر من array
+تمت تجربة هذا الكود بنجاح
+*/
+var myArray = [ "John Doe" , "Billy" ] ;
+window.alert(myArray[1]) ; // Billy
+
+
+//كود رقم 13
+/*
+كود إدراج محتويات ملف نصى فى كائن فى الصفحة
+انظر كود رقم
+الملف النصى باسمajax_info.txt 
+تمت تجربة هذا الكود بنجاح
+*/
+function loadDoc() {
+  	var xhttp = new XMLHttpRequest();
+  	xhttp.onreadystatechange = function() {
+    	if (this.readyState == 4 && this.status == 200) {
+     	document.getElementById("demo").innerHTML = this.responseText;
+    		}
+  	};
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+
+
+//كود رقم 14
+/*
