@@ -135,6 +135,7 @@ app.listen(port, function(){
 /*
 كود التحكم فى تسجيل الدخول
 انظر كود رقم 2 ببنك اتش تى ام ال
+تمت تجربة هذا الكود بنجاح
 */
 //تسجيل دخول المستخدمين
 function check(){
@@ -156,3 +157,45 @@ else {
 
 //كود رقم 8
 /*
+كود القراءة من ملف جيسون باستخدام new XMLHttpRequest()
+ووضع النتائج فى كائنات فى صفحة اتش تى ام ال
+انظر الكود رقم 4 ببنك اتش تى ام ال
+انظر كود رقم 1 ببنك جيسون
+تمت تجربة هذا الكود بنجاح
+*/
+var xReq = new XMLHttpRequest();
+xReq.open('GET', 'data1.json');
+xReq.onload = function(){
+var xdata = JSON.parse(xReq.responseText);
+document.getElementById('data1').innerHTML = xdata[0].Username;
+document.getElementById('data2').innerHTML = xdata[0].model;
+}
+xReq.send();
+
+
+//كود رقم 9
+/*
+كود القراءة من ملف جيسون باستخدام new XMLHttpRequest()
+ووضع النتائج فى كائنات فى صفحة اتش تى ام ال
+بعد الضغط على زر
+انظر الكود رقم 4 ببنك اتش تى ام ال
+انظر كود رقم 1 ببنك جيسون
+تمت تجربة هذا الكود بنجاح
+*/
+var zar = document.getElementById('zar');
+var info = document.getElementById('data1');
+var info2 = document.getElementById('data2');
+zar.addEventListener("click", function(){
+var xReq = new XMLHttpRequest();
+xReq.open('GET', 'database1.json');
+xReq.onload = function(){
+var xdata = JSON.parse(xReq.responseText);
+info.innerHTML = xdata[0].Username;
+info2.innerHTML = xdata[0].model;
+}
+xReq.send();
+});
+
+
+//كود رقم 10
+/
