@@ -454,10 +454,11 @@ server.listen(3000, "127.0.0.1", ()=>{
     console.log('server runing')
 })
 //يتم كتابة هذا الكود فى ملف باسم elements.js
-function element(){ var ele  = "<b>taha1</b>" + "<br>"+ "<b>taha2</b>";
+function element(){ var ele  = '<b style="color: red;">taha1</b>' + "<br>"+ "<b>taha2</b>";
 return ele;
 }
 module.exports= {element: element,  }
+
 
 //كود رقم 22
 /*
