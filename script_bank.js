@@ -327,15 +327,21 @@ window.requestAnimationFrame( eachFrame) ;
 
 //كود رقم 16
 /*
-كود كتابة سى اس اس باستخدام jquery
+كود كتابة سى اس اس باستخدام jquery أو بستخدام جافا اسكربت مباشرة
 انظر كود رقم 8 ببنك اتش تى ام ال
 تمت تجربة هذا الكود بنجاح
 */
+//استخدام jquery
 $('#b1').css({
 	margin: "5px",
 	padding: "10px",
 	color: "red",	
 });
+//استخدام جافا اسكربت مباشرة
+var el = document.getElementById("b1");
+el.style.color = 'red';
+el.style.opacity = 0.5;
+el.style.background = 'green';
 
 
 //كود رقم 17
