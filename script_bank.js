@@ -372,6 +372,17 @@ document.write(person.name);
 
 //كود رقم 18
 /*
+كود طباعة محتويات array
+تمت تجربة هذا الكود بنجاح
+*/
+var array = ['a', 'b', 'c'];
+for (var i = 0; i < array.length; i++){
+	document.write(array[i]);
+}
+
+
+//كود رقم 19
+/*
 
 
 
