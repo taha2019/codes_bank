@@ -428,7 +428,39 @@ var carName = "Volvo";
 
 //كود رقم 21
 /*
+كود قراءة ملف جافا اسكريبت من خلال سرفر وعرض النتائج على صفحة مستعرض
+تمت تجربة هذا الكود بنجاح
+*/
+//يتم كتابة هذا الكود فى ملف app.js 
+//يتم تشغيل السرفر على هذا الملف 
+const http = require ('http');
+const fs = require ('fs');
+const url= require ('url');
+const addnew2 = require ('./elements');
+var a = addnew2.element();
+const server = http. createServer((req, res)=>{
+ const path = url.parse(req.url);
+ console.log(path);
+    fs.readFile('./index.html', null, (error, data)=>{
+          if(error){
+              res.end('file have ereror')
+          }else{
+              res.end(a);
+         }
+      }
+  )
+});
+server.listen(3000, "127.0.0.1", ()=>{
+    console.log('server runing')
+})
+//يتم كتابة هذا الكود فى ملف باسم elements.js
+function element(){ var ele  = "<b>taha1</b>" + "<br>"+ "<b>taha2</b>";
+return ele;
+}
+module.exports= {element: element,  }
 
+//كود رقم 22
+/*
 
 
 
