@@ -390,8 +390,44 @@ document.write(i);
 
 //كود رقم 19
 /*
+كود إرجاع رقم عشوائى بين 1 و 10 بما فيهم 1 و 10
+تمت تجربة هذا الكود بنجاح
+*/
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+var a = getRndInteger(1, 10);
+document.write(a);
 
 
+//كود رقم 20
+/*
+كود مدى استخدام المتغيرات
+*/
+// code here can NOT use carName
+function myFunction() {
+  var carName = "Volvo";
+  // code here CAN use carName
+}
+//
+var carName = "Volvo";
+// code here can use carName
+function myFunction() {
+  // code here can also use carName
+}
+//
+myFunction();
+// code here can use carName
+function myFunction() {
+  carName = "Volvo";
+} 
+//
+var carName = "Volvo";
+// code here can use window.carName
+
+
+//كود رقم 21
+/*
 
 
 
