@@ -346,6 +346,40 @@ el.style.background = 'green';
 
 //كود رقم 17
 /*
+كود إدراج خاصية فى object والتحكم فيه من خلال get و set
+تمت تجربة هذا الكود بنجاح
+*/
+var person = {name: "john", surname: "doe"};
+Object.defineProperty(person, 'fullname', {
+	get: function(){
+		return this.name + " " + this.surname;
+	},
+	set: function(value){
+		[this.name, this.surname] = value.split(" ")
+	}
+});
+//وضع get
+document.write(person.fullname);
+//وضع set
+person.surname = "hill ";
+//وضع get
+document.write(person.fullname);
+//وضع set
+person.fullname = "mary jones";
+//وضع get
+document.write(person.name);
+
+
+//كود رقم 18
+/*
+
+
+
+
+
+
+
+
 
 
 
