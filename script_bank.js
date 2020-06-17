@@ -327,7 +327,19 @@ window.requestAnimationFrame( eachFrame) ;
 
 //كود رقم 16
 /*
+كود كتابة سى اس اس باستخدام jquery
+انظر كود رقم 8 ببنك اتش تى ام ال
+تمت تجربة هذا الكود بنجاح
+*/
+$('#b1').css({
+	margin: "5px",
+	padding: "10px",
+	color: "red",	
+});
 
+
+//كود رقم 17
+/*
 
 
 
