@@ -375,9 +375,16 @@ document.write(person.name);
 كود طباعة محتويات array
 تمت تجربة هذا الكود بنجاح
 */
+//بساتخدام for
 var array = ['a', 'b', 'c'];
 for (var i = 0; i < array.length; i++){
 	document.write(array[i]);
+}
+//باستخدام new set() و for of
+const names = ['taha1', 'taha2', 'taha3', 'taha4']
+const uniqunames = new Set(names);
+for (let i  of uniqunames){
+document.write(i);
 }
 
 
