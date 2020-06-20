@@ -463,8 +463,8 @@ module.exports= {element: element,  }
 //كود رقم 22
 /*
 كود قراءة ملف جافا اسكريبت من خلال سرفر وعرض النتائج بإضافتها الى محتويات صفحة 
-تمت تجربة هذا الكود بنجاح
 انظر كود رقم 8 ببنك تش تى ام ال
+تمت تجربة هذا الكود بنجاح
 */
 //يتم تشغيل السرفر على هذا الملف 
 const http = require ('http');
@@ -500,10 +500,73 @@ module.exports= {element: element,  }
 
 //كود رقم 23
 /*
+كود التعامل مع jquery
+انظر كود رقم 9 ffk; hja jn hl hg
+تمت تجربة هذا الكود بنجاح
+*/
+$( '#taha' ) .css( {
+ margin: "5px" ,
+ padding: "10px" ,
+ color: "red"
+})
+
+
+//كود رقم 24/*
+/*
+كود أنيميشن فى شفافية الكائن لكائن فى الصفحة
+انظر كود رقم 10 ببك اتش تى ام ال
+تمت تجربة هذا الكود بنجاح
+*/
+var FADE_DURATION = 8000;
+var startTime = -1.0;
+function render(currTime) {
+var head1 = document.getElementById("demo");
+var opacity = (currTime/FADE_DURATION);
+head1.style.opacity = opacity;
+}
+function eachFrame() {
+var timeRunning = (new Date()).getTime() - startTime;
+if (startTime < 0) {
+startTime = ( new Date( ) ) .getTime( ) ;
+render( 0.0) ;
+} else if ( timeRunning < FADE_DURATION) {
+render( timeRunning) ;
+} else {
+return;
+}
+window.requestAnimationFrame( eachFrame) ;
+};
+window.requestAnimationFrame( eachFrame) ;
 
 
 
+//كود رقم 25/*
+/*
+كود التعامل مع أحداث الماوس
+تمت تجربة هذا الكود بنجاح
+*/
+var text = document.getElementById('taha');
+//
+text.addEventListener("click", function(){ alert("Hello World!"); });
+//
+text.addEventListener("mouseover", myFunction);
+//
+text.addEventListener("click", myFunction);
+//
+text.addEventListener("mouseout", myFunction);
+// 
+function myFunction() {
+  alert ("Hello World!");
+}
+//
+var sometext = "hello world"
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = sometext;
+});  
 
+
+//كود رقم 26/*
+/*
 
 
 
