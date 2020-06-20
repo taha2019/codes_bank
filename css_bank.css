@@ -127,6 +127,52 @@ a:hover, a:active { color: #f58233;}
 
 
 //كود رقم 3
+/*
+تنسيق معرض الصور
+انظر كود رقم 26 ببنك جافا اسكربت 
+وكود رقم 11 ببنك اتش تى ام ال
+*/
+.body {
+	background-color: #333 ;
+}
+.slider {
+	margin: 40px auto;
+	width: 750px;
+}
+.slide{
+	width: 600px;
+	height: 350px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	}
+.slide img {
+	width: 100%;
+	height: 100%;
+	display: none;
+	border-radius: 15px;
+	}
+.prev, .next {
+	width: 40px;
+	float: left;
+	margin-top: 150px;
+	cursor: pointer;
+}
+.slide .show {
+	display: inline-block;
+	}
+
+
+//كود رقم 4
+/*
+
+
+
+
+
+
+
+
 
 
 
