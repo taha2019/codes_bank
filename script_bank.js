@@ -567,6 +567,34 @@ window.addEventListener("resize", function(){
 
 //كود رقم 26/*
 /*
+كود معرض صور
+انظر كود رقم 11 ببنك اتش تى ام ال
+انظر ايضا كود رقم 3 ببنك سى اس اس
+تمت تجربة هذا الكود بنجاح
+*/
+$('.next').click(function(){
+	const now_img = $('.show');
+	const next_img = now_img.next();
+	if (next_img.length){
+		now_img.removeClass('show');
+		next_img.addClass('show');
+		}
+	});
+$('.prev').click(function(){
+	const now_img = $('.show');
+	const prev_img = now_img.prev();
+	if (prev_img.length){
+		now_img.removeClass('show');
+		prev_img.addClass('show');
+		}
+	});
+
+	
+//كود رقم 27/*
+/*
+	
+
+
 
 
 
